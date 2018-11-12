@@ -1,1 +1,4 @@
 djangoconnection/__pycache__
+db.sqlite3
+akademik/__pycache__
+akademik/migrations/__pycache__
