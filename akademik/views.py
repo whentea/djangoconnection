@@ -14,17 +14,17 @@ def index(request):
 
 
 def create(request):
-    nilai1 = StatusModel(choice_text="bahasa indonesia", votes=90)
-    nilai2 = StatusModel(choice_text="bahasa inggris", votes=72)
-    nilai3 = StatusModel(choice_text="bahasa arab", votes=69)
-    nilai4 = StatusModel(choice_text="bahasa jawa", votes=81)
+    nilai1 = StatusModel(mk ="bahasa indonesia", votes=90)
+    nilai2 = StatusModel(mk ="bahasa inggris", votes=72)
+    nilai3 = StatusModel(mk ="bahasa arab", votes=69)
+    nilai4 = StatusModel(mk ="bahasa jawa", votes=81)
 
     nilais = [nilai1, nilai2, nilai3, nilai4]
 
-    user = UserModel(nama="Wahyu", pub_date=datetime.datetime.now(), nilais=nilais)
+    user = UserModel(nama="Wahyu", tgl=datetime.datetime.now(), nilais=nilais)
     user.save()
 
-    user = UserModel(nama="Wenty", pub_date=datetime.datetime.now(),
+    user = UserModel(nama="Wenty", tgl=datetime.datetime.now(),
                      nilais=nilais)
     user.save()
 
