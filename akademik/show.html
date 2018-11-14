@@ -1,0 +1,11 @@
+{% for user in users%}
+Document ID: {{user.id}} <br>
+Nama: {{user.nama}} <br>
+Tanggal: {{user.tgl}} <br>
+Status:<br>
+    {% for nilai in user.nilais %}
+    {{nilai.mk}} : {{nilai.votes}} <br>
+    {% endfor %}
+<a href="{% url "mhs:delete" user.id %}">Delete</a>
+<hr>
+{% endfor %}
