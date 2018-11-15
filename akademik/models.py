@@ -8,6 +8,6 @@ class StatusModel(EmbeddedDocument):
     mk = StringField(max_length=200)
     votes = IntField(default=0)
 
-class userModel(Document):
-    nama = STringField(max_length=200)
+class UserModel(Document):
+    nama = StringField(max_length=200)
 nilais = ListField(EmbeddedDocumentField(StatusModel))

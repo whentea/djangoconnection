@@ -2,7 +2,7 @@
 
 # Create your views here.
 
-from mhs.models import UserModel, StatusModel
+from akademik.models import UserModel, StatusModel
 import datetime
 from django.shortcuts import render, redirect
 from django.http import HttpResponse, HttpResponseRedirect
@@ -10,7 +10,7 @@ from django.urls import reverse
 # Create your views here.
 def index(request):
     data = {}
-    return render(request,"mhs/index.html",data)
+    return render(request,"akademik/index.html",data)
 
 
 def create(request):

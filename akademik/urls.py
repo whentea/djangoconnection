@@ -6,5 +6,6 @@ urlpatterns = [
     url('^$', views.index, name='index'),
     url('^create/$', views.create, name='create'),
     url('^show/$', views.show, name='show'),
-    url('^delete/(?{<document_id>[a-z0-9]*)/$', views.delete, name='delete'),
+    url('^delete/(?P<document_id>[a-z0-9]*)/$', views.delete, name='delete'),
+    
 ]
